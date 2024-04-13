@@ -1,0 +1,168 @@
+body {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ATTESTATION-LETTER-FORM {
+  width: 100%;
+}
+
+.form-container {
+  width: 60%;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  /* border: 2px solid black; */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.form-contents {
+  padding-top: 5px;
+  padding-left: 25px;
+}
+.form-contents h4 {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.biodata-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.ALI-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.flexrow {
+  display: flex;
+  flex-direction: column;
+}
+.flexrow input {
+  width: 150px;
+  height: 30px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.flexrow select {
+  width: 150px;
+  height: 37px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.grid-form {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+.flexrow-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexrow-2 input {
+  width: 220px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.flexrow-2 select {
+  width: 230px;
+  height: 37px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.flexrow-3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.flexrow-3 label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flexrow-3 input {
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flexrow-3 textarea {
+  width: 50%;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.flexrow-3 .file {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.flexrow-3 .postage-option {
+  width: 200px;
+}
+
+.buttons {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.buttons .proceed {
+  width: 100px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.buttons .proceed:hover {
+  background-color: transparent;
+  color: #28a745;
+  border: 2px solid #28a745;
+  transition: 0.6s;
+}
+
+.buttons .cancel {
+  width: 100px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #dd2f2f;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttons .cancel:hover {
+  background-color: transparent;
+  color: #dd2f2f;
+  border: 2px solid #dd2f2f;
+  transition: 0.6s;
+}
