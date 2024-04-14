@@ -51,7 +51,7 @@ li {
   align-items: self-start;
   justify-content: space-around;
   grid-template-columns: auto auto auto;
-  column-gap: 0px;
+  column-gap: 10px;
   row-gap: 10px;
   margin-top: 20px;
   color: #7d3c3c;

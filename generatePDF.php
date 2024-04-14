@@ -35,7 +35,7 @@ $dompdf->setPaper("A4", "portrait");
 /**
  * Load the HTML and replace placeholders with values from the form
  */
-$html = file_get_contents("template.html");
+$html = file_get_contents("template.html"); 
 
 $html = str_replace(["{{firstname}}","{{surname}}","{{ othername }}","{{matriculationNumber}}","{{ applicationNumber }}","{{ dateOfBirth }}",], [$firstname,$surname,$othername,$matriculationNumber,$applicationNumber,$dateOfBirth], $html);
 

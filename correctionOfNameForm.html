@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORRECTION OF NAME</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+  </head>
+  <body>
+    <div class="ATTESTATION-LETTER-FORM">
+      <h1>CORRECTION OF NAME</h1>
+      <h3>Application Portal</h3>
+
+      <div class="form-container">
+        <div class="form-contents">
+          <h4>Applicant's Biodata</h4>
+          <form method="post" action="generatePDF.php">
+            <div class="biodata-container">
+              <div class="flexrow">
+                <label for="applictaion-number">Application Number*</label>
+                <input id="random-id" type="hidden" name="applicationNumber" />
+                <input
+                  disabled
+                  id="random-id2"
+                  type="text"
+                  name="applicationNumber"
+                />
+              </div>
+              <div class="flexrow">
+                <label for="applictaion-number">Matriculation Number</label>
+                <input name="matriculationNumber" type="text" />
+              </div>
+            </div>
+            <div
+              class="col-md-12"
+              style="padding: 5px 60px 20px 60px; margin-top: 20px"
+            >
+              <hr
+                style="border: 1.2px solid #160202; background-color: #160202"
+              />
+            </div>
+            <div class="grid-form">
+              <div class="flexrow-2">
+                <label for="applictaion-number">Surname</label>
+                <input name="surname" type="text" />
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">First Name</label>
+                <input name="firstname" type="text" />
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Other Names</label>
+                <input name="othername" type="text" />
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Gender</label>
+                <input type="text" />
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Date of Birth</label>
+                <input name="dateOfBirth" type="date" />
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Phone Number</label>
+                <input type="number" />
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number"
+                  >Applicant's Email Address</label
+                >
+                <input type="email" />
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Are You Married</label>
+                <select type="text">
+                  <option value="">Select Status</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <!-- Academic Information section -->
+            <h4>Academic Information</h4>
+            <div class="grid-form">
+              <div class="flexrow-2">
+                <label for="applictaion-number">College</label>
+                <select type="text" id="faculty">
+                  <option value="">Select College</option>
+                  <option value="01">
+                    College of Natural and Applied Sciences (CONAS)
+                  </option>
+                  <option value="02">
+                    College of Business and Social Science (CBSS)
+                  </option>
+                  <option value="03">
+                    College of Arts and Communication Studies (CACUS)
+                  </option>
+                </select>
+              </div>
+
+              <div class="flexrow-2">
+                <label for="applictaion-number">Department</label>
+                <select type="text" id="MOE">
+                  <option value="">Select Status</option>
+                  <!-- Options will be added dynamically with JS -->
+                </select>
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Mode Of Entry</label>
+                <select type="text">
+                  <option value="">Select Mode Of Entry</option>
+                  <option value="">Select Mode Of Entry</option>
+                  <option value="3">DIPLOMA</option>
+                  <option value="2">DIRECT ENTRY</option>
+                  <option value="5">IJMB</option>
+                  <option value="4">JUPEP</option>
+                  <option value="1">UTME</option>
+                </select>
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Select Study Type</label>
+                <select type="text">
+                  <option value="">Select Study Type</option>
+                  <option value="1">DEGREE</option>
+                  <option value="3">DIPLOMA</option>
+                  <option value="4">JUPEB</option>
+                  <option value="5">PDS</option>
+                  <option value="6">SANDWICH</option>
+                </select>
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Study Mode</label>
+                <select type="text">
+                  <option value="">Select Study Mode</option>
+                  <option value="1">FULL-TIME</option>
+                  <option value="2">PART-TIME</option>
+                  <option value="3">SANDWICH</option>
+                </select>
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Class Of Degree</label>
+                <select type="text">
+                  <option value="">Select Class Of Degree</option>
+                  <option value="1">1st Class Hon</option>
+                  <option value="3">2nd Class Hon (Lower Division)</option>
+                  <option value="2">2nd Class Hon (Upper Division)</option>
+                  <option value="4">3rd Class Hon</option>
+                  <option value="8">Distinction</option>
+                  <option value="9">Lower Credit</option>
+                  <option value="10">Merit</option>
+                  <option value="6">Not yet Graduated</option>
+                  <option value="5">Pass Degree</option>
+                  <option value="7">Upper Credit</option>
+                </select>
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Year Of Entry</label>
+                <select type="text">
+                  <option value="">Select Status</option>
+                </select>
+              </div>
+              <div class="flexrow-2">
+                <label for="applictaion-number">Year Of Graduation</label>
+                <select type="text">
+                  <option value="">Select Your Session Of Entry</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <!-- Academic Information section -->
+            <h4>CORRECTION OF NAME Information</h4>
+            <div class="ALI-container">
+              <div class="flexrow-3">
+                <label for="applictaion-number">Reason For Request</label>
+                <select class="postage-option" type="text">
+                  <option value="">Select Correction Type</option>
+                  <option value="1">CORRECTION OF MATRIC NUMBER</option>
+                  <option value="3">CORRECTION OF NAME</option>
+                </select>
+              </div>
+              <div class="flexrow-3">
+                <label for="file"
+                  >Evidence of Document with Wrong Details*</label
+                >
+                <input class="file" type="file" />
+              </div>
+              <div class="flexrow-3">
+                <label for="file"
+                  >Evidence of Document with Correct Details*</label
+                >
+                <input class="file" type="file" />
+              </div>
+            </div>
+            <hr />
+            <div class="buttons">
+              <button type="submit" class="proceed">PROCEED</button>
+              <button class="cancel">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="generateID.js"></script>
+  </body>
+</html>

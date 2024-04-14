@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATTESTATION LETTER</title>
+    <title>CORRECTION OF NAME</title>
     <link rel="stylesheet" href="serviceDetails.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,16 +14,24 @@
   </head>
   <body>
     <section class="service-details-section">
-      <h1>ATTESTATION LETTER</h1>
+      <h1>CORRECTION OF NAME</h1>
       <p>
-        Letter written and signed by the Registrar to confirm attendance &
-        graduation.
+        This Entails Processing of Requests for Correction of Name for approval
+        of Senate
       </p>
-      <h2>Requirements For ATTESTATION LETTER</h2>
+      <h2>Requirements For CORRECTION OF NAME</h2>
       <ul>
         <li>
-          Copy of Certificate or Evidence of Payment for Certificate (For
-          Graduate Only)
+          Birth Certificate OR O'level Result Used in Gaining Admission OR
+          Admission Letter Bearing the Correct Name
+        </li>
+        <li>
+          Notification of Result And Evidence of Payment for Certificate OR
+          Certificate (Graduate Only)
+        </li>
+        <li>
+          Notification of Result OR Certificate where Correction is Required
+          (Graduate Only)
         </li>
         <li>Relevant Documents to be attached MUST be in pdf format</li>
       </ul>
@@ -37,10 +45,21 @@
         <h4>Confirm</h4>
         <p>1</p>
         <p>
-          I Have A Scanned Copy of my Certificate or Evidence of Payment for
-          Certificate
+            I Have A Scanned Copy of my Birth Certificate OR LASU Screening Certificate OR O'level Result Used in Gaining Admission OR Admission Letter Bearing the Correct Name
         </p>
         <input type="checkbox" class="checkbox" />
+        <p>2</p>
+        <p>
+            I Have A Scanned Copy of my Certificate or Evidence of Payment for Certificate
+        </p>
+        <input type="checkbox" class="checkbox" />
+        <p>3</p>
+        <p>
+            I Have A Scanned Copy of my Notification of Result OR Certificate where Correction is Required
+        </p>
+        <input type="checkbox" class="checkbox" />
+      </div>
+      
       </div>
       <div class="button-section">
         <p>NB: You Have To Fulfill All The Requirements Before Proceeding</p>
@@ -48,7 +67,7 @@
       </div>
     </section>
     <!-- passing the current page value to the check box value function -->
-    <p style="display: none" id="currentPage" data-value="attestationPage">
+    <p style="display: none" id="currentPage" data-value="correctionOfNameForm">
       attestation page
     </p>
     <script src="checkboxValues.js"></script>
