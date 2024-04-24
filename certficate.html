@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CERTIFICATE</title>
+    <link rel="stylesheet" href="serviceDetails.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="service-details-section">
+      <h1>CERTIFICATE</h1>
+      <p>
+        Academic Document signed by the Vice Chancellor and the Registrar
+        confirming the completion of an academic programme
+      </p>
+      <h2>Requirements For CERTIFICATE</h2>
+      <ul>
+        <li>
+          Sworn Affidavit Stating Intention to Collect Certificate via Courier
+          Delivery
+        </li>
+        <li>
+          Copy of Valid means of Identification (i.e. International Passport,
+          National ID Card, Voter's Card or Driver's License)
+        </li>
+        <li>
+          Copy of Marriage Certificate or Newspaper Publication on Change of
+          Name (Applicable ONLY to married women who have changed their maiden
+          name)
+        </li>
+        <li>
+          White Background Passport size Photograph (jpeg or jpg format only and
+          it should be renamed using full name before upload)
+        </li>
+        <li>Notification of Result</li>
+        <li>
+          School Fees Receipt or Evidence of Payment of Five Thousand Naira (₦
+          5,000) for Loss of Receipt or Original Student's Statement of Account
+        </li>
+        <li>
+          Evidence of payment of One Thousand Naira (₦ 1,000) only Alumni Due
+        </li>
+      </ul>
+    </section>
+    <section class="requirement-checker">
+      <h3>Requirement Checker</h3>
+      <hr />
+      <div class="grid-form-table">
+        <h4>S/N</h4>
+        <h4>Requirement</h4>
+        <h4>Confirm</h4>
+        <p>1</p>
+        <p>
+          I Have A Scanned Copy of my Certificate or Evidence of Payment for
+          Certificate
+        </p>
+        <input type="checkbox" class="checkbox" />
+        <p>2</p>
+        <p>
+          I Have A Scanned Copy of valid means of identification (i.e.
+          International Passport, National ID Card, Voter's Card or Driver's
+          License)
+        </p>
+        <input type="checkbox" class="checkbox" />
+        <p>3</p>
+        <p>
+          I Have A Scanned Copy of my Marriage Certificate or Newspaper
+          Publication on Change of Name (Applicable ONLY to married women who
+          have changed their maiden name). Check this even if you have not
+          changed your name
+        </p>
+        <input type="checkbox" class="checkbox" />
+        <p>4</p>
+        <p>I Have A Scanned Copy of my Notification of Result</p>
+        <input type="checkbox" class="checkbox" />
+      </div>
+      <div class="button-section">
+        <p>NB: You Have To Fulfill All The Requirements Before Proceeding</p>
+        <button id="applyButton">Fulfill The Requirements</button>
+      </div>
+    </section>
+    <!-- passing the current page value to the check box value function -->
+    <p style="display: none" id="currentPage" data-value="certficatePage">
+      attestation page
+    </p>
+    <script src="checkboxValues.js"></script>
+  </body>
+</html>

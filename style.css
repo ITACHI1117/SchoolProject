@@ -97,7 +97,8 @@ body {
 }
 .flexrow-3 label {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+  width: 300px;
 }
 
 .flexrow-3 input {

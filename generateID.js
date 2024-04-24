@@ -1,4 +1,3 @@
-console.log("hi");
 const setrandomid = document.getElementById("random-id");
 const setrandomid2 = document.getElementById("random-id2");
 

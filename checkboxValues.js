@@ -36,7 +36,18 @@ function updateButtonText() {
       // Update the window location when the button is clicked
       window.location.href = "correctionOfNameForm.html";
     });
+  } else if (allChecked && value == "certficatePage") {
+    button.addEventListener("click", function () {
+      // Update the window location when the button is clicked
+      window.location.href = "certficateForm.html";
+    });
+  } else if (allChecked && value == "instantTranscriptStudentCopyOnly") {
+    button.addEventListener("click", function () {
+      // Update the window location when the button is clicked
+      window.location.href = "instantTranscriptStudentCopyOnlyForm.html";
+    });
   }
+
   //   allChecked
   //     ? button.addEventListener("click", function () {
   //         // Update the window location when the button is clicked

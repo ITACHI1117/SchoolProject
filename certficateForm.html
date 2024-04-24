@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CORRECTION OF NAME</title>
+    <title>CERTIFICATE</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,28 +15,17 @@
   </head>
   <body>
     <div class="ATTESTATION-LETTER-FORM">
-      <h1>CORRECTION OF NAME</h1>
+      <h1>CERTIFICATE</h1>
       <h3>Application Portal</h3>
 
       <div class="form-container">
         <div class="form-contents">
           <h4>Applicant's Biodata</h4>
-          <form
-            method="post"
-            action="processForm.php"
-            enctype="multipart/form-data"
-          >
+          <form method="post" action="generatePDF.php">
             <div class="biodata-container">
               <div class="flexrow">
                 <label for="applictaion-number">Application Number*</label>
-                <!-- Passing the correction_of_name value to processForm for dynamic database Uploads -->
-                <input
-                  value="correction_of_name"
-                  type="hidden"
-                  name="database"
-                />
                 <input id="random-id" type="hidden" name="applicationNumber" />
-
                 <input
                   disabled
                   id="random-id2"
@@ -46,7 +35,16 @@
               </div>
               <div class="flexrow">
                 <label for="applictaion-number">Matriculation Number</label>
-                <input required name="matriculationNumber" type="text" />
+                <input name="matriculationNumber" type="text" />
+              </div>
+              <div class="flexrow">
+                <label for="applictaion-number">Study Mode</label>
+                <select name="studyMode" type="text">
+                  <option value="">Select Study Mode</option>
+                  <option value="1">FULL-TIME</option>
+                  <option value="2">PART-TIME</option>
+                  <option value="3">SANDWICH</option>
+                </select>
               </div>
             </div>
             <div
@@ -60,40 +58,40 @@
             <div class="grid-form">
               <div class="flexrow-2">
                 <label for="applictaion-number">Surname</label>
-                <input required name="surname" type="text" />
+                <input name="surname" type="text" />
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">First Name</label>
-                <input required name="firstname" type="text" />
+                <input name="firstname" type="text" />
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Other Names</label>
-                <input required name="othername" type="text" />
+                <input name="othername" type="text" />
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Gender</label>
-                <input required name="gender" type="text" />
+                <input name="gender" type="text" />
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Date of Birth</label>
-                <input required name="dateOfBirth" type="date" />
+                <input name="dateOfBirth" type="date" />
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Phone Number</label>
-                <input required name="phoneNumber" type="number" />
+                <input name="phoneNumber" type="number" />
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number"
                   >Applicant's Email Address</label
                 >
-                <input required name="email" type="email" />
+                <input name="email" type="email" />
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Are You Married</label>
-                <select required name="marriageStatus" type="text">
+                <select name="marriageStatus" type="text">
                   <option value="">Select Status</option>
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
                 </select>
               </div>
             </div>
@@ -102,144 +100,141 @@
             <div class="grid-form">
               <div class="flexrow-2">
                 <label for="applictaion-number">College</label>
-                <select required name="college" type="text" id="faculty">
+                <select name="college" type="text" id="faculty">
                   <option value="">Select College</option>
-                  <option
-                    value="College of Natural and Applied Sciences (CONAS)"
-                  >
+                  <option value="01">
                     College of Natural and Applied Sciences (CONAS)
                   </option>
-                  <option value="College of Business and Social Science (CBSS)">
+                  <option value="02">
                     College of Business and Social Science (CBSS)
                   </option>
-                  <option
-                    value="College of Arts and Communication Studies (CACOS)"
-                  >
-                    College of Arts and Communication Studies (CACOS)
+                  <option value="03">
+                    College of Arts and Communication Studies (CACUS)
                   </option>
                 </select>
               </div>
 
               <div class="flexrow-2">
                 <label for="applictaion-number">Department</label>
-                <select required name="department" type="text" id="MOE">
+                <select type="text" id="MOE">
                   <option value="">Select Status</option>
                   <!-- Options will be added dynamically with JS -->
                 </select>
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Mode Of Entry</label>
-                <select required name="modeOfEntry" type="text">
+                <select type="text">
                   <option value="">Select Mode Of Entry</option>
-                  <option value="DIPLOMA">DIPLOMA</option>
-                  <option value="DIRECT ENTRY">DIRECT ENTRY</option>
-                  <option value="IJMB">IJMB</option>
-                  <option value="JUPEP">JUPEP</option>
-                  <option value="UTME">UTME</option>
+                  <option value="">Select Mode Of Entry</option>
+                  <option value="3">DIPLOMA</option>
+                  <option value="2">DIRECT ENTRY</option>
+                  <option value="5">IJMB</option>
+                  <option value="4">JUPEP</option>
+                  <option value="1">UTME</option>
                 </select>
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Select Study Type</label>
-                <select required name="studyType" type="text">
+                <select type="text">
                   <option value="">Select Study Type</option>
-                  <option value="DEGREE">DEGREE</option>
-                  <option value="DIPLOMA">DIPLOMA</option>
-                  <option value="JUPEB">JUPEB</option>
-                  <option value="PDS">PDS</option>
-                  <option value="SANDWICH">SANDWICH</option>
+                  <option value="1">DEGREE</option>
+                  <option value="3">DIPLOMA</option>
+                  <option value="4">JUPEB</option>
+                  <option value="5">PDS</option>
+                  <option value="6">SANDWICH</option>
                 </select>
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Study Mode</label>
-                <select required name="studyMode" type="text">
+                <select type="text">
                   <option value="">Select Study Mode</option>
-                  <option value="FULL-TIME">FULL-TIME</option>
-                  <option value="PART-TIME">PART-TIME</option>
+                  <option value="1">FULL-TIME</option>
+                  <option value="2">PART-TIME</option>
+                  <option value="3">SANDWICH</option>
                 </select>
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Class Of Degree</label>
-                <select required name="classOfDegree" type="text">
+                <select type="text">
                   <option value="">Select Class Of Degree</option>
-                  <option value="1st Class Hon">1st Class Hon</option>
-                  <option value="2nd Class Hon (Lower Division)">
-                    2nd Class Hon (Lower Division)
-                  </option>
-                  <option value="2nd Class Hon (Upper Division)">
-                    2nd Class Hon (Upper Division)
-                  </option>
-                  <option value="3rd Class Hon">3rd Class Hon</option>
-                  <option value="Distinction">Distinction</option>
-                  <option value="Lower Credit">Lower Credit</option>
-                  <option value="Merit">Merit</option>
-                  <option value="Not yet Graduated">Not yet Graduated</option>
-                  <option value="Pass Degree">Pass Degree</option>
-                  <option value="Upper Credit">Upper Credit</option>
+                  <option value="1">1st Class Hon</option>
+                  <option value="3">2nd Class Hon (Lower Division)</option>
+                  <option value="2">2nd Class Hon (Upper Division)</option>
+                  <option value="4">3rd Class Hon</option>
+                  <option value="8">Distinction</option>
+                  <option value="9">Lower Credit</option>
+                  <option value="10">Merit</option>
+                  <option value="6">Not yet Graduated</option>
+                  <option value="5">Pass Degree</option>
+                  <option value="7">Upper Credit</option>
                 </select>
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Year Of Entry</label>
-                <select required name="yearOfEntry" type="text">
-                  <option value="Select Status">Select Status</option>
+                <select type="text">
+                  <option value="">Select Status</option>
                 </select>
               </div>
               <div class="flexrow-2">
                 <label for="applictaion-number">Year Of Graduation</label>
-                <select required name="yearOfGraduation" type="text">
+                <select type="text">
                   <option value="">Select Your Session Of Entry</option>
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
                 </select>
               </div>
             </div>
             <!-- Academic Information section -->
-            <h4>CORRECTION OF NAME Information</h4>
+            <h4>ATTESTATION LETTER Information</h4>
             <div class="ALI-container">
               <div class="flexrow-3">
-                <label for="applictaion-number">Reason For Request</label>
-                <select
-                  required
-                  name="correctionType"
-                  class="postage-option"
-                  type="text"
-                >
-                  <option value="">Select Correction Type</option>
-                  <option value="CORRECTION OF MATRIC NUMBER">
-                    CORRECTION OF MATRIC NUMBER
-                  </option>
-                  <option value="CORRECTION OF NAME">CORRECTION OF NAME</option>
+                <label for="applictaion-number">Postage Option</label>
+                <select class="postage-option" type="text">
+                  <option value="">Select Postage Option</option>
+                  <option value="1">Courier</option>
+                  <option value="3">DELIVERY TO WES</option>
+                  <option value="2">Email</option>
                 </select>
               </div>
               <div class="flexrow-3">
                 <label for="file"
-                  >Evidence of Document with Wrong Details*</label
+                  >White Background Passport size Photograph*</label
                 >
-                <input
-                  required
-                  name="image1"
-                  id="image1"
-                  class="file"
-                  type="file"
-                />
+                <input class="file" type="file" />
+              </div>
+              <div class="flexrow-3">
+                <label for="file">Notification of Result*</label>
+                <input class="file" type="file" />
               </div>
               <div class="flexrow-3">
                 <label for="file"
-                  >Evidence of Document with Correct Details*</label
+                  >Evidence of payment of ₦ 1,000 Only Alumni Due*</label
                 >
-                <input
-                  required
-                  name="image2"
-                  id="image2"
-                  class="file"
-                  type="file"
-                />
+                <input class="file" type="file" />
+              </div>
+              <div class="flexrow-3">
+                <label for="file">Student's Final Clearance*</label>
+                <input class="file" type="file" />
+              </div>
+              <div class="flexrow-3">
+                <label for="file"
+                  >Sworn Affidavit Stating Intention to Collect Certificate via
+                  Courier Delivery*</label
+                >
+                <input class="file" type="file" />
+              </div>
+              <div class="flexrow-3">
+                <label for="file"
+                  >Copy of Valid means of Identification (i.e. International
+                  Passport, National ID Card, Voter's Card or Driver's
+                  License)*</label
+                >
+                <input class="file" type="file" />
               </div>
             </div>
             <hr />
             <div class="buttons">
-              <button type="submit" class="proceed" name="submit">
-                PROCEED
-              </button>
+              <button type="submit" class="proceed">PROCEED</button>
               <button class="cancel">Cancel</button>
             </div>
           </form>

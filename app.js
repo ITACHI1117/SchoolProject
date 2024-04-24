@@ -11,11 +11,13 @@ selectElement.addEventListener("change", function () {
 
   // Log or use the selected value
 
-  if (selectedValue == "01") {
+  if (selectedValue == "College of Natural and Applied Sciences (CONAS)") {
     addOptions(ArtsOptions);
-  } else if (selectedValue == "02") {
+  } else if (selectedValue == "College of Business and Social Science (CBSS)") {
     addOptions(EducationOptions);
-  } else if (selectedValue == "03") {
+  } else if (
+    selectedValue == "College of Arts and Communication Studies (CACOS)"
+  ) {
     addOptions(EngineeringOptions);
   } else if (selectedValue == "04") {
     addOptions(LawOptions);
@@ -23,6 +25,7 @@ selectElement.addEventListener("change", function () {
   return selectedValue;
 });
 
+console.log(selectedValue);
 function addOptions(options) {
   // Get the <select> element
   const selectDepartmentElement = document.getElementById("MOE");
